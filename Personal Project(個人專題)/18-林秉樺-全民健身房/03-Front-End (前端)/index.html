@@ -1,192 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="http://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-      crossorigin="anonymous"
-    />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap"
-      rel="stylesheet"
-    />
-    <!-- font-awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
-    />
-    <!-- swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
-    <link rel="stylesheet" href="./css/material-cards.css" />
-    <link rel="stylesheet" href="./css/index.css" />
-    
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700" rel="stylesheet"
+    type="text/css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
 
-  <body>
-    <nav >
-      <div class="logo">
-        <svg
-          aria-hidden="true"
-          focusable="false"
-          data-prefix="fas"
-          data-icon="dumbbell"
-          class="svg-inline--fa fa-dumbbell fa-w-20"
-          role="img"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 640 512"
-        >
-          <path
-            fill="currentColor"
-            d="M104 96H56c-13.3 0-24 10.7-24 24v104H8c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h24v104c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24zm528 128h-24V120c0-13.3-10.7-24-24-24h-48c-13.3 0-24 10.7-24 24v272c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V288h24c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8zM456 32h-48c-13.3 0-24 10.7-24 24v168H256V56c0-13.3-10.7-24-24-24h-48c-13.3 0-24 10.7-24 24v400c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V288h128v168c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24z"
-          ></path>
-        </svg>
-        <h2>
-          全民
-        </h2>
-      </div>
-      <div class="nav-title ">
-        <ul class="justify-content-between">
-          <li class="d-flex justify-content-center">關於</li>
-          <li>課程</li>
-          <li>公告</li>
-          <li>收費</li>
-          <li>教練</li>
-          <li>產品</li>
-          <li>地點</li>
-        </ul>
-      </div>
-      <div class="timetable">
-        <h3>課表查詢</h3>
-      </div>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet" />
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+  <!-- font-awesome-pro -->
 
-      <div class="fb">
-        <img src="./img/facebook-1.png" alt="" />
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+  <link rel="stylesheet" href="./css/material-cards.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dumbbell"
+        class="svg-inline--fa fa-dumbbell fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+        <path fill="currentColor"
+          d="M104 96H56c-13.3 0-24 10.7-24 24v104H8c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h24v104c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24zm528 128h-24V120c0-13.3-10.7-24-24-24h-48c-13.3 0-24 10.7-24 24v272c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V288h24c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8zM456 32h-48c-13.3 0-24 10.7-24 24v168H256V56c0-13.3-10.7-24-24-24h-48c-13.3 0-24 10.7-24 24v400c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V288h128v168c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24z">
+        </path>
+      </svg>
+      <h2>
+        全民
+      </h2>
+    </div>
+    <div class="nav-title ">
+      <ul class="justify-content-between">
+        <li class="d-flex justify-content-center">關於</li>
+        <li>課程</li>
+        <li>公告</li>
+        <li>收費</li>
+        <li>教練</li>
+        <li>產品</li>
+        <li>地點</li>
+      </ul>
+    </div>
+    <div class="timetable">
+      <h3>課表查詢</h3>
+    </div>
+
+    <div class="fb">
+      <img src="./img/facebook-1.png" alt="" />
+    </div>
+    <div class="ig">
+      <img src="./img/instagram-1.png" alt="" />
+    </div>
+  </nav>
+  <main class="banner">
+    <div class="timetable">
+      <h3>課表查詢</h3>
+    </div>
+  </main>
+  <main class="aboutUs pt-5">
+    <div class="aboutUs-title text-center">
+      <h2>關於我們</h2>
+    </div>
+    <div class="aboutUs-content pt-4 d-flex justify-content-between">
+      <div class="contentBrand">
+        <img src="./img/brand.jpg" alt="" />
+        <button type="button" class="btn btn-secondary btn-lg btn-block">
+          品牌述求
+        </button>
       </div>
-      <div class="ig">
-        <img src="./img/instagram-1.png" alt="" />
+      <div class="contentHistory">
+        <img src="./img/History.jpg" alt="" />
+        <button type="button" class="btn btn-secondary btn-lg btn-block">
+          歷史由來
+        </button>
       </div>
-    </nav>
-    <main class="banner">
-      <div class="timetable">
-        <h3>課表查詢</h3>
-      </div>
-    </main>
-    <main class="aboutUs pt-5">
-      <div class="aboutUs-title text-center">
-        <h2>關於我們</h2>
-      </div>
-      <div class="aboutUs-content pt-4 d-flex justify-content-between">
-        <div class="contentBrand">
-          <img src="./img/brand.jpg" alt="" />
-          <button type="button" class="btn btn-secondary btn-lg btn-block">
-            品牌述求
-          </button>
-        </div>
-        <div class="contentHistory">
-          <img src="./img/History.jpg" alt="" />
-          <button type="button" class="btn btn-secondary btn-lg btn-block">
-            歷史由來
-          </button>
-        </div>
-      </div>
-    </main>
-    <main class="classIntroduction">
-      <div class="container">
-        <div class="classIntroduction-title pt-5">課程介紹</div>
-        <div class="classcontainer d-flex pt-4 ">
-          <div
-            id="Introduction1"
-            class="carousel slide carousel-fade  d-flex "
-            data-ride="carousel"
-          >
-            <ol class="class-btn order-3 col-2 d-flex flex-column">
-              <li data-target="#Introduction1" data-slide-to="0" class="active">
-                拳擊
-              </li>
-              <li data-target="#Introduction1" data-slide-to="1">瑜珈</li>
-              <li
-                data-target="#Introduction1"
-                data-slide-to="2"
-                style="padding: 0;"
-              >
-                心肺肌力
-              </li>
-              <li data-target="#Introduction1" data-slide-to="3">飛輪</li>
-              <li data-target="#Introduction1" data-slide-to="4">TRX</li>
-            </ol>
-            <div class="carousel-inner order-1 col-10 pt-2  ">
-              <div class="carousel-item active d-flex">
-                <div class="d-block w-100 col-9">
-                  <img src="./img/class-boxing.jpg" alt="" />
-                </div>
-                <div class="d-none d-md-block col-3">
-                  <p>
-                    不同於傳統拳擊的暴力跟危險，甚至打的鼻青臉腫腦震盪，拳擊健身運動是加以改良後的新健身時尚運動，更有著可以兼顧男女性的不同運動需求，無論是要打拳練身體或雕塑身材，都有很好的效果。
-                  </p>
-                </div>
+    </div>
+  </main>
+  <main class="classIntroduction">
+    <div class="container">
+      <div class="classIntroduction-title pt-5">課程介紹</div>
+      <div class="classcontainer d-flex pt-4 ">
+        <div id="Introduction1" class="carousel slide carousel-fade  d-flex " data-ride="carousel">
+          <ol class="class-btn order-3 col-2 d-flex flex-column">
+            <li data-target="#Introduction1" data-slide-to="0" class="active">
+              拳擊
+            </li>
+            <li data-target="#Introduction1" data-slide-to="1">瑜珈</li>
+            <li data-target="#Introduction1" data-slide-to="2" style="padding: 0;">
+              心肺肌力
+            </li>
+            <li data-target="#Introduction1" data-slide-to="3">飛輪</li>
+            <li data-target="#Introduction1" data-slide-to="4">TRX</li>
+          </ol>
+          <div class="carousel-inner order-1 col-10 pt-2  ">
+            <div class="carousel-item active d-flex">
+              <div class="d-block w-100 col-9">
+                <img src="./img/class-boxing.jpg" alt="" />
               </div>
-
-              <div class="carousel-item d-flex">
-                <div class="d-block w-100 col-9">
-                  <img src="./img/class-Yoga.jpg" alt="" />
-                </div>
-                <div class="d-none d-md-block col-3">
-                  <p>
-                    為密集動態體姿訓練。有助於排毒、平衡荷爾蒙、減重。並增加靈活柔軟度，增強體力並提振精神。
-                  </p>
-                </div>
+              <div class="d-none d-md-block col-3">
+                <p>
+                  不同於傳統拳擊的暴力跟危險，甚至打的鼻青臉腫腦震盪，拳擊健身運動是加以改良後的新健身時尚運動，更有著可以兼顧男女性的不同運動需求，無論是要打拳練身體或雕塑身材，都有很好的效果。
+                </p>
               </div>
+            </div>
 
-              <div class="carousel-item d-flex">
-                <div class="d-block w-100 col-9">
-                  <img src="./img/class-fit.jpg" alt="" />
-                </div>
-                <div class="d-none d-md-block col-3">
-                  <p>
-                    近年來「肌無力」的健康問題越來越被重視，人隨著年齡漸長，身體的心肺功能、肌肉量、骨質密度，生理機能會逐漸退化。
-                  </p>
-                </div>
+            <div class="carousel-item d-flex">
+              <div class="d-block w-100 col-9">
+                <img src="./img/class-Yoga.jpg" alt="" />
               </div>
-
-              <div class="carousel-item d-flex">
-                <div class="d-block w-100 col-9">
-                  <img src="./img/class-bike.jpg" alt="" />
-                </div>
-                <div class="d-none d-md-block col-3">
-                  <p>
-                    這是為了沒有騎過飛輪經驗者準備的課程，教練們將介紹車子的基本設定和基本動作及手部握把姿勢來建立基礎的正確概念
-                  </p>
-                </div>
+              <div class="d-none d-md-block col-3">
+                <p>
+                  為密集動態體姿訓練。有助於排毒、平衡荷爾蒙、減重。並增加靈活柔軟度，增強體力並提振精神。
+                </p>
               </div>
+            </div>
 
-              <div class="carousel-item d-flex">
-                <div class="d-block w-100 col-9">
-                  <img src="./img/class-trx.jpg" alt="" />
-                </div>
-                <div class="d-none d-md-block col-3">
-                  <p>
-                    TRX懸吊式阻抗訓練，是一種全身性的肌力訓練，它不需要加任何重量，只要利用自己的體重作為阻力，讓身體更有力量、靈活、平衡。TRX的特色就是適合任何年紀，任何體能水準的人做訓練。
-                  </p>
-                </div>
+            <div class="carousel-item d-flex">
+              <div class="d-block w-100 col-9">
+                <img src="./img/class-fit.jpg" alt="" />
+              </div>
+              <div class="d-none d-md-block col-3">
+                <p>
+                  近年來「肌無力」的健康問題越來越被重視，人隨著年齡漸長，身體的心肺功能、肌肉量、骨質密度，生理機能會逐漸退化。
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item d-flex">
+              <div class="d-block w-100 col-9">
+                <img src="./img/class-bike.jpg" alt="" />
+              </div>
+              <div class="d-none d-md-block col-3">
+                <p>
+                  這是為了沒有騎過飛輪經驗者準備的課程，教練們將介紹車子的基本設定和基本動作及手部握把姿勢來建立基礎的正確概念
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item d-flex">
+              <div class="d-block w-100 col-9">
+                <img src="./img/class-trx.jpg" alt="" />
+              </div>
+              <div class="d-none d-md-block col-3">
+                <p>
+                  TRX懸吊式阻抗訓練，是一種全身性的肌力訓練，它不需要加任何重量，只要利用自己的體重作為阻力，讓身體更有力量、靈活、平衡。TRX的特色就是適合任何年紀，任何體能水準的人做訓練。
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </main>
-    <main class="curriculum">
-      <div class="title text-center pt-5 h2">各館課表</div>
-      <!-- <div class="container d-flex pt-3">
+    </div>
+  </main>
+  <main class="curriculum pb-5">
+    <div class="title text-center pt-5 h2">各館課表</div>
+    <!-- <div class="container d-flex pt-3">
             <div class="curriculum-card col-3">
                 <div class="curriculum-img">
                     <img src="./img/card-one.jpg" alt="">
@@ -220,10 +193,11 @@
                 </div>
             </div>
         </div> -->
-      <div id="curriculum" class="carousel slide" data-ride="carousel">
+    <div id="curriculum" class="carousel slide" data-ride="carousel">
+      <div class="container">
         <div class="carousel-inner">
           <div class="carousel-item active" data-interval="10000">
-            <div class="container d-flex pt-3">
+            <div class=" d-flex pt-3">
               <div class="curriculum-card col-3">
                 <div class="curriculum-img">
                   <img src="./img/card-one.jpg" alt="" />
@@ -259,7 +233,7 @@
             </div>
           </div>
           <div class="carousel-item" data-interval="2000">
-            <div class="container d-flex pt-3">
+            <div class=" d-flex pt-3">
               <div class="curriculum-card col-3">
                 <div class="curriculum-img">
                   <img src="./img/card-one.jpg" alt="" />
@@ -295,429 +269,397 @@
             </div>
           </div>
         </div>
-        <a
-          class="curriculum-arrow-right carousel-control-prev"
-          href="#curriculum"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="far fa-hand-point-left" aria-hidden="true"></span>
+        <a class="curriculum-arrow-right carousel-control-prev" href="#curriculum" role="button" data-slide="prev">
+          <span class="fas fa-angle-left" aria-hidden="true" style="width:30px;"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a
-          class="curriculum-arrow-left carousel-control-next"
-          href="#curriculum"
-          role="button"
-          data-slide="next"
-        >
-          <span class="far fa-hand-point-right" aria-hidden="true"></span>
+        <a class="curriculum-arrow-left carousel-control-next" href="#curriculum" role="button" data-slide="next">
+
+          <span class="fas fa-angle-right" aria-hidden="true" style="width:30px;"></span>
           <span class="sr-only">Next</span>
         </a>
       </div>
-    </main>
 
-    <main class="news text-center">
-      <div class="news-title pt-5 h2">
-        公告
-      </div>
-      <div class="news-kinds d-flex justify-content-center ">
-        <div class="news-kinds-all px-3 py-3">
-          <h3 class="btn btn-secondary">全部消息</h3>
-        </div>
-        <div class="news-kinds-useful px-3 py-3">
-          <h3 class="btn btn-secondary">促銷活動</h3>
-        </div>
-      </div>
-      <div class="news-content">
-        <ul class="pb-3">
-          <li class="d-flex justify-content-center">
-            <div class="news-date px-3">2020-02-29</div>
-            <div class="news-main px-3">網站文字大小、字體間距、行高等...</div>
-            <i class="fas fa-caret-right"></i>
-          </li>
-          <li class="d-flex justify-content-center">
-            <div class="news-date px-3">2020-02-29</div>
-            <div class="news-main px-3">網站文字大小、字體間距、行高等...</div>
-            <i class="fas fa-caret-right"></i>
-          </li>
-          <li class="d-flex justify-content-center">
-            <div class="news-date px-3">2020-02-29</div>
-            <div class="news-main px-3">網站文字大小、字體間距、行高等...</div>
-            <i class="fas fa-caret-right"></i>
-          </li>
-          <li class="d-flex justify-content-center">
-            <div class="news-date px-3">2020-02-29</div>
-            <div class="news-main px-3">網站文字大小、字體間距、行高等...</div>
-            <i class="fas fa-caret-right"></i>
-          </li>
-          <li class="d-flex justify-content-center">
-            <div class="news-date px-3">2020-02-29</div>
-            <div class="news-main px-3">網站文字大小、字體間距、行高等...</div>
-            <i class="fas fa-caret-right"></i>
-          </li>
-        </ul>
-      </div>
-    </main>
-    <main class="charge text-center">
-      <div class="charge-title h2 pt-5">收費標準</div>
-      <div class="charge-content d-flex pt-3">
-        <div class="charge-content-cost col-6">
-          <div class="cost-bg">
-            <div class="ch-title h3 postit">費用須知</div>
-            <div class="ch-more h3">MORE</div>
-          </div>
-        </div>
-        <div class="charge-content-space"></div>
-        <div class="charge-content-member col-6">
-          <div class="cost-bg2">
-            <div class="ch-title h3 postit">會員須知</div>
-            <div class="ch-more h3">MORE</div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <main class="gymCoach text-center">
-      <div class="container">
-        <div class="gymCoach-title h2 pt-5">健身教練</div>
-        <div class="gymCoach-kinds d-flex justify-content-center h3 pt-3">
-          <div class="kind">興大館</div>
-          <div class="kind">英才館</div>
-          <div class="kind">崇德館</div>
-          <div class="kind">東大館</div>
-        </div>
-        <div class="gymCoach-fourman pt-4 d-flex swiper-container">
-          <div class=" active-with-click swiper-wrapper d-flex">
-            <div class="col-md-4 col-sm-6 col-xs-12 swiper-slide ">
-              <article class="material-card Red ">
-                <h2>
-                  <span>Christopher Walken</span>
-                  <strong>
-                    <i class="fa fa-fw fa-star"></i>
-                    The Deer Hunter
-                  </strong>
-                </h2>
-                <div class="mc-content">
-                  <div class="img-container">
-                    <img class="img-responsive" src="./img/曹志偉_1016.png" />
-                  </div>
-                  <div class="mc-description">
-                    He has appeared in more than 100 films and television shows,
-                    including The Deer Hunter, Annie Hall, The Prophecy trilogy,
-                    The Dogs of War ...
-                  </div>
-                </div>
-                <a class="mc-btn-action">
-                  <i class="fa fa-bars"></i>
-                </a>
-                <div class="mc-footer">
-                  <h4>
-                    Social
-                  </h4>
-                  <a class="fab fa-facebook-square"></a>
-                  <a class="fab fa-instagram"></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12 swiper-slide">
-              <article class="material-card Pink ">
-                <h2>
-                  <span>Sean Penn</span>
-                  <strong>
-                    <i class="fa fa-fw fa-star"></i>
-                    Mystic River
-                  </strong>
-                </h2>
-                <div class="mc-content">
-                  <div class="img-container">
-                    <img class="img-responsive" src="./img/羅子鈞_1016.png" />
-                  </div>
-                  <div class="mc-description">
-                    He has won two Academy Awards, for his roles in the mystery
-                    drama Mystic River (2003) and the biopic Milk (2008). Penn
-                    began his acting career in television with a brief
-                    appearance in a 1974 episode of Little House on the Prairie
-                    ...
-                  </div>
-                </div>
-                <a class="mc-btn-action">
-                  <i class="fa fa-bars"></i>
-                </a>
-                <div class="mc-footer">
-                  <h4>
-                    Social
-                  </h4>
-                  <a class="fab fa-facebook-square"></a>
-                  <a class="fab fa-instagram"></a>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12 swiper-slide">
-              <article class="material-card Purple ">
-                <h2>
-                  <span>Clint Eastwood</span>
-                  <strong>
-                    <i class="fa fa-fw fa-star"></i>
-                    Million Dollar Baby
-                  </strong>
-                </h2>
-                <div class="mc-content">
-                  <div class="img-container">
-                    <img class="img-responsive" src="./img/郭志樹_1016.png" />
-                  </div>
-                  <div class="mc-description">
-                    He rose to international fame with his role as the Man with
-                    No Name in Sergio Leone's Dollars trilogy of spaghetti
-                    Westerns during the 1960s ...
-                  </div>
-                </div>
-                <a class="mc-btn-action">
-                  <i class="fa fa-bars"></i>
-                </a>
-                <div class="mc-footer">
-                  <h4>
-                    Social
-                  </h4>
-                  <a class="fab fa-facebook-square"></a>
-                  <a class="fab fa-instagram"></a>
-                </div>
-              </article>
-            </div>
-             <div class="col-md-4 col-sm-6 col-xs-12 swiper-slide">
-              <article class="material-card Blue ">
-                <h2>
-                  <span>Clint Eastwood</span>
-                  <strong>
-                    <i class="fa fa-fw fa-star"></i>
-                    Million Dollar Baby
-                  </strong>
-                </h2>
-                <div class="mc-content">
-                  <div class="img-container">
-                    <img class="img-responsive" src="./img/郭志樹_1016.png" />
-                  </div>
-                  <div class="mc-description">
-                    He rose to international fame with his role as the Man with
-                    No Name in Sergio Leone's Dollars trilogy of spaghetti
-                    Westerns during the 1960s ...
-                  </div>
-                </div>
-                <a class="mc-btn-action">
-                  <i class="fa fa-bars"></i>
-                </a>
-                <div class="mc-footer">
-                  <h4>
-                    Social
-                  </h4>
-                  <a class="fab fa-facebook-square"></a>
-                  <a class="fab fa-instagram"></a>
-                </div>
-              </article>
-            </div> 
-          </div>
+    </div>
+  </main>
 
-          <!-- Add Pagination -->
-          <div class="swiper-pagination" style="display: none;"></div>
-          <!-- Add Arrows -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+  <main class="news text-center">
+    <div class="news-title pt-5 h2">
+      公告
+    </div>
+    <div class="news-kinds d-flex justify-content-center ">
+      <div class="news-kinds-all px-3 py-3">
+        <h3 class="btn btn-secondary">全部消息</h3>
+      </div>
+      <div class="news-kinds-useful px-3 py-3">
+        <h3 class="btn btn-secondary">促銷活動</h3>
+      </div>
+    </div>
+    <div class="news-content">
+      <ul class="pb-3">
+        <li class="d-flex justify-content-center">
+          <div class="news-date px-3">2020-02-29</div>
+          <div class="news-main px-3">網站文字大小、字體間距、行高等...</div>
+          <i class="fas fa-caret-right"></i>
+        </li>
+        <li class="d-flex justify-content-center">
+          <div class="news-date px-3">2020-02-29</div>
+          <div class="news-main px-3">網站文字大小、字體間距、行高等...</div>
+          <i class="fas fa-caret-right"></i>
+        </li>
+        <li class="d-flex justify-content-center">
+          <div class="news-date px-3">2020-02-29</div>
+          <div class="news-main px-3">網站文字大小、字體間距、行高等...</div>
+          <i class="fas fa-caret-right"></i>
+        </li>
+        <li class="d-flex justify-content-center">
+          <div class="news-date px-3">2020-02-29</div>
+          <div class="news-main px-3">網站文字大小、字體間距、行高等...</div>
+          <i class="fas fa-caret-right"></i>
+        </li>
+        <li class="d-flex justify-content-center">
+          <div class="news-date px-3">2020-02-29</div>
+          <div class="news-main px-3">網站文字大小、字體間距、行高等...</div>
+          <i class="fas fa-caret-right"></i>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <main class="charge text-center">
+    <div class="charge-title h2 pt-5">收費標準</div>
+    <div class="charge-content d-flex pt-3">
+      <div class="charge-content-cost col-6">
+        <div class="cost-bg">
+          <div class="ch-title h3 postit">費用須知</div>
+          <div class="ch-more h3">MORE</div>
         </div>
       </div>
-    </main>
-
-    <main class="memberWitness text-center">
-      <div class="memberWitness-title h2 pt-5">會員見證</div>
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <iframe
-              width="100%"
-              height="500"
-              src="https://www.youtube.com/embed/G2pWo0hdI5k"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+      <div class="charge-content-space"></div>
+      <div class="charge-content-member col-6">
+        <div class="cost-bg2">
+          <div class="ch-title h3 postit">會員須知</div>
+          <div class="ch-more h3">MORE</div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <main class="gymCoach text-center">
+    <div class="container">
+      <div class="gymCoach-title h2 pt-5">健身教練</div>
+      <div class="gymCoach-kinds d-flex justify-content-center h3 pt-3">
+        <div class="kind">興大館</div>
+        <div class="kind">英才館</div>
+        <div class="kind">崇德館</div>
+        <div class="kind">東大館</div>
+      </div>
+      <div class="gymCoach-fourman pt-4 d-flex swiper-container">
+        <div class=" active-with-click swiper-wrapper d-flex">
+          <div class="col-md-4 col-sm-6 col-xs-12 swiper-slide ">
+            <article class="material-card Red ">
+              <h2>
+                <span>Christopher Walken</span>
+                <strong>
+                  <i class="fa fa-fw fa-star"></i>
+                  The Deer Hunter
+                </strong>
+              </h2>
+              <div class="mc-content">
+                <div class="img-container">
+                  <img class="img-responsive" src="./img/曹志偉_1016.png" />
+                </div>
+                <div class="mc-description">
+                  He has appeared in more than 100 films and television shows,
+                  including The Deer Hunter, Annie Hall, The Prophecy trilogy,
+                  The Dogs of War ...
+                </div>
+              </div>
+              <a class="mc-btn-action">
+                <i class="fa fa-bars"></i>
+              </a>
+              <div class="mc-footer">
+                <h4>
+                  Social
+                </h4>
+                <a class="fab fa-facebook-square"></a>
+                <a class="fab fa-instagram"></a>
+              </div>
+            </article>
           </div>
-          <div class="swiper-slide">
-            <iframe
-              width="100%"
-              height="500"
-              src="https://www.youtube.com/embed/z2cl7IqDWPw"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+          <div class="col-md-4 col-sm-6 col-xs-12 swiper-slide">
+            <article class="material-card Pink ">
+              <h2>
+                <span>Sean Penn</span>
+                <strong>
+                  <i class="fa fa-fw fa-star"></i>
+                  Mystic River
+                </strong>
+              </h2>
+              <div class="mc-content">
+                <div class="img-container">
+                  <img class="img-responsive" src="./img/羅子鈞_1016.png" />
+                </div>
+                <div class="mc-description">
+                  He has won two Academy Awards, for his roles in the mystery
+                  drama Mystic River (2003) and the biopic Milk (2008). Penn
+                  began his acting career in television with a brief
+                  appearance in a 1974 episode of Little House on the Prairie
+                  ...
+                </div>
+              </div>
+              <a class="mc-btn-action">
+                <i class="fa fa-bars"></i>
+              </a>
+              <div class="mc-footer">
+                <h4>
+                  Social
+                </h4>
+                <a class="fab fa-facebook-square"></a>
+                <a class="fab fa-instagram"></a>
+              </div>
+            </article>
           </div>
-          <div class="swiper-slide">
-            <iframe
-              width="100%"
-              height="500"
-              src="https://www.youtube.com/embed/pozrJV79Bjc"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+          <div class="col-md-4 col-sm-6 col-xs-12 swiper-slide">
+            <article class="material-card Purple ">
+              <h2>
+                <span>Clint Eastwood</span>
+                <strong>
+                  <i class="fa fa-fw fa-star"></i>
+                  Million Dollar Baby
+                </strong>
+              </h2>
+              <div class="mc-content">
+                <div class="img-container">
+                  <img class="img-responsive" src="./img/郭志樹_1016.png" />
+                </div>
+                <div class="mc-description">
+                  He rose to international fame with his role as the Man with
+                  No Name in Sergio Leone's Dollars trilogy of spaghetti
+                  Westerns during the 1960s ...
+                </div>
+              </div>
+              <a class="mc-btn-action">
+                <i class="fa fa-bars"></i>
+              </a>
+              <div class="mc-footer">
+                <h4>
+                  Social
+                </h4>
+                <a class="fab fa-facebook-square"></a>
+                <a class="fab fa-instagram"></a>
+              </div>
+            </article>
           </div>
-          <div class="swiper-slide">
-            <iframe
-              width="100%"
-              height="500"
-              src="https://www.youtube.com/embed/23VNZgoIvgs"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+          <div class="col-md-4 col-sm-6 col-xs-12 swiper-slide">
+            <article class="material-card Blue ">
+              <h2>
+                <span>Clint Eastwood</span>
+                <strong>
+                  <i class="fa fa-fw fa-star"></i>
+                  Million Dollar Baby
+                </strong>
+              </h2>
+              <div class="mc-content">
+                <div class="img-container">
+                  <img class="img-responsive" src="./img/郭志樹_1016.png" />
+                </div>
+                <div class="mc-description">
+                  He rose to international fame with his role as the Man with
+                  No Name in Sergio Leone's Dollars trilogy of spaghetti
+                  Westerns during the 1960s ...
+                </div>
+              </div>
+              <a class="mc-btn-action">
+                <i class="fa fa-bars"></i>
+              </a>
+              <div class="mc-footer">
+                <h4>
+                  Social
+                </h4>
+                <a class="fab fa-facebook-square"></a>
+                <a class="fab fa-instagram"></a>
+              </div>
+            </article>
           </div>
         </div>
+
         <!-- Add Pagination -->
-        <div class="swiper-pagination" style="display:none"></div>
+        <div class="swiper-pagination" style="display: none;"></div>
         <!-- Add Arrows -->
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
       </div>
-    </main>
-    <main class="fitnessProducts text-center">
-      <div class="container">
-        <div class="fitnessProducts-title h2 pt-5">健身產品</div>
-        <div class="fitnessProducts-content d-flex">
-          <div class="fitnessProducts-content-card col-4 d-flex flex-column align-items-center justify-content-end" style="background-color: black; height: 300px;">
-            <div class="card-title" style="color:white">健身產品</div>
-            <div class="card-more" style="display:none;">more</div>
+    </div>
+  </main>
+
+  <main class="memberWitness text-center">
+    <div class="memberWitness-title h2 pt-5">會員見證</div>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <iframe width="100%" height="500" src="https://www.youtube.com/embed/G2pWo0hdI5k" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="swiper-slide">
+          <iframe width="100%" height="500" src="https://www.youtube.com/embed/z2cl7IqDWPw" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="swiper-slide">
+          <iframe width="100%" height="500" src="https://www.youtube.com/embed/pozrJV79Bjc" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="swiper-slide">
+          <iframe width="100%" height="500" src="https://www.youtube.com/embed/23VNZgoIvgs" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination" style="display:none"></div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </main>
+  <main class="fitnessProducts text-center">
+    <div class="container">
+      <div class="fitnessProducts-title h2 pt-5">健身產品</div>
+      <div class="fitnessProducts-content d-flex">
+        <div class="fitnessProducts-content-card col-4 d-flex flex-column align-items-center justify-content-end"
+          style="background-color: black; height: 300px;">
+          <div class="card-title" style="color:white">健身產品</div>
+          <div class="card-more" style="display:none;">more</div>
+        </div>
+        <div class="fitnessProducts-content-card col-4 d-flex flex-column align-items-center justify-content-end"
+          style="background-color: black; height: 300px;">
+          <div class="card-title" style="color:white">健身產品</div>
+          <div class="card-more" style="display:none;">more</div>
+        </div>
+        <div class="fitnessProducts-content-card col-4 d-flex flex-column align-items-center justify-content-end"
+          style="background-color: black; height: 300px;">
+          <div class="card-title" style="color:white">健身產品</div>
+          <div class="card-more" style="display:none;">more</div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <main class="stronghold text-center">
+    <div class="container ">
+      <div class="stronghold-title h2">全台據點</div>
+      <div class="stronghold-choose d-flex justify-content-center">
+        <div class="dropdown px-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            請選擇地區
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
           </div>
-          <div class="fitnessProducts-content-card col-4 d-flex flex-column align-items-center justify-content-end" style="background-color: black; height: 300px;">
-            <div class="card-title" style="color:white">健身產品</div>
-            <div class="card-more" style="display:none;">more</div>
-          </div>
-          <div class="fitnessProducts-content-card col-4 d-flex flex-column align-items-center justify-content-end" style="background-color: black; height: 300px;">
-            <div class="card-title" style="color:white">健身產品</div>
-            <div class="card-more" style="display:none;">more</div>
+        </div>
+        <div class="dropdown px-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            請選擇場館
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
           </div>
         </div>
       </div>
-    </main>
-    <main class="stronghold text-center">
-      <div class="container ">
-        <div class="stronghold-title h2">全台據點</div>
-        <div class="stronghold-choose d-flex justify-content-center">
-          <div class="dropdown px-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              請選擇地區
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+      <div class="stronghold-main d-flex justify-content-between text-left pt-4">
+        <div class="stronghold-main-map px-5 pt-5">
+          <div class="stronghold-main-tel">電話:0912345678</div>
+          <div class="stronghold-main-addr">地址:台中市豐原區台灣大道</div>
+          <div class="stronghold-main-time">營業時間:平日 0800-2400 <br> 假日:0800-2400</div>
+          <div class="stronghold-main-Introduction w-100">
+            <p>場館介紹:XXXX</p>
           </div>
-          <div class="dropdown px-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              請選擇場館
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </div>
+          <div class="stronghold-main-btn px-4 py-3 ">前往地圖</div>
         </div>
-        <div class="stronghold-main d-flex justify-content-between text-left pt-4">
-          <div class="stronghold-main-map px-5 pt-5">
-            <div class="stronghold-main-tel">電話:0912345678</div>
-            <div class="stronghold-main-addr">地址:台中市豐原區台灣大道</div>
-            <div class="stronghold-main-time">營業時間:平日 0800-2400 <br> 假日:0800-2400</div>
-            <div class="stronghold-main-Introduction w-100"><p>場館介紹:XXXX</p></div>
-            <div class="stronghold-main-btn px-4 py-3 " >前往地圖</div>
-          </div>
-          <div class="stronghold-main-picture"></div>
+        <div class="stronghold-main-picture"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content d-flex flex-column align-items-center">
+      <div class="footer-logo d-flex justify-content-between py-3">
+        <div class="fb">
+          <img src="./img/facebook-1.png" alt="" />
+        </div>
+        <div class="ig">
+          <img src="./img/instagram-1.png" alt="" />
         </div>
       </div>
-    </main>
-
-    <footer>
-      <div class="footer-content d-flex flex-column align-items-center">
-        <div class="footer-logo d-flex justify-content-between py-3">
-          <div class="fb">
-            <img src="./img/facebook-1.png" alt="" />
-          </div>
-          <div class="ig">
-            <img src="./img/instagram-1.png" alt="" />
-          </div>
-        </div>
-        <div class="footer-copyright pb-3">
-          Copyright©bing hua All rights reserved
-        </div>
+      <div class="footer-copyright pb-3">
+        Copyright©bing hua All rights reserved
       </div>
-    </footer>
-  </body>
-  <script
-    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-    crossorigin="anonymous"
-  ></script>
-  <!-- card js -->
-  <script>
-    $(function() {
-      $(".material-card > .mc-btn-action").click(function() {
-        var card = $(this).parent(".material-card");
-        var icon = $(this).children("i");
-        icon.addClass("fa-spin-fast");
+    </div>
+  </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+  integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+  integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<!-- card js -->
+<script>
+  $(function () {
+    $(".material-card > .mc-btn-action").click(function () {
+      var card = $(this).parent(".material-card");
+      var icon = $(this).children("i");
+      icon.addClass("fa-spin-fast");
 
-        if (card.hasClass("mc-active")) {
-          card.removeClass("mc-active");
+      if (card.hasClass("mc-active")) {
+        card.removeClass("mc-active");
 
-          window.setTimeout(function() {
-            icon
-              .removeClass("fa-arrow-left")
-              .removeClass("fa-spin-fast")
-              .addClass("fa-bars");
-          }, 800);
-        } else {
-          card.addClass("mc-active");
+        window.setTimeout(function () {
+          icon
+            .removeClass("fa-arrow-left")
+            .removeClass("fa-spin-fast")
+            .addClass("fa-bars");
+        }, 800);
+      } else {
+        card.addClass("mc-active");
 
-          window.setTimeout(function() {
-            icon
-              .removeClass("fa-bars")
-              .removeClass("fa-spin-fast")
-              .addClass("fa-arrow-left");
-          }, 800);
-        }
-      });
-    });
-  </script>
-  <!-- font-awesome -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.js"></script>
-  <script src="./js/vue.js"></script>
-  <!-- swiper -->
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-
-  <!-- swiper js -->
-  <script>
-    var appendNumber = 4;
-    var prependNumber = 1;
-    var swiper = new Swiper(".swiper-container", {
-      slidesPerView: 3,
-      centeredSlides: true,
-      spaceBetween: 0,
-      initialSlide :1,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
+        window.setTimeout(function () {
+          icon
+            .removeClass("fa-bars")
+            .removeClass("fa-spin-fast")
+            .addClass("fa-arrow-left");
+        }, 800);
       }
     });
-  </script>
+  });
+</script>
+<!-- font-awesome -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.js"></script>
+<script src="./js/vue.js"></script>
+<!-- swiper -->
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+<!-- swiper js -->
+<script>
+  var appendNumber = 4;
+  var prependNumber = 1;
+  var swiper = new Swiper(".swiper-container", {
+    slidesPerView: 3,
+    centeredSlides: true,
+    spaceBetween: 0,
+    initialSlide: 1,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    }
+  });
+</script>
+
 </html>

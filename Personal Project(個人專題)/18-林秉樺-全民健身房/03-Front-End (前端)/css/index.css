@@ -235,8 +235,16 @@ nav .ig img {
   letter-spacing: 2px;
 }
 
+.classIntroduction .container .classcontainer .carousel .carousel-inner .carousel-item .carousel-control-prev {
+  width: auto;
+}
+
 .curriculum {
   background-image: url(../img/cur-background.jpg);
+}
+
+.curriculum .container {
+  position: relative;
 }
 
 .curriculum .container .curriculum-card .curriculum-img img {
@@ -249,11 +257,13 @@ nav .ig img {
 }
 
 .curriculum .curriculum-arrow-right {
-  left: 18%;
+  width: auto;
+  left: -4%;
 }
 
 .curriculum .curriculum-arrow-left {
-  right: 18%;
+  width: auto;
+  right: -4%;
 }
 
 .news {

@@ -260,6 +260,9 @@ nav {
                             font-size: 18px;
                             letter-spacing: 2px;
                         }
+                        .carousel-control-prev{
+                            width: auto;
+                        }
                     }
                 }
             }
@@ -269,6 +272,7 @@ nav {
 .curriculum{
     background-image: url(../img/cur-background.jpg);
     .container{
+        position: relative;
         .curriculum-card{
             .curriculum-img{
                 img{
@@ -283,10 +287,12 @@ nav {
         }
     }
     .curriculum-arrow-right{
-        left: 18%;
+        width: auto;
+        left: -4%;
     }
     .curriculum-arrow-left{
-        right: 18%;
+        width:auto;
+        right: -4%;
     }
 }
 .news{
