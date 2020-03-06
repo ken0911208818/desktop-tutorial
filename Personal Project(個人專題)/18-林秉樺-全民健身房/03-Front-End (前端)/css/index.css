@@ -1,0 +1,390 @@
+body {
+  margin: 0;
+  font-family: 'Noto Sans TC';
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 30px;
+}
+
+ol li {
+  padding: 10px 30px;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  line-height: 60px;
+}
+
+.svg-inline--fa {
+  height: 50px;
+}
+
+.svg-inline--fa.fa-w-16 {
+  width: 50px;
+}
+
+.svg-inline--fa.fa-w-6 {
+  width: 10px;
+}
+
+nav {
+  height: 48px;
+  width: 100%;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  margin-left: 120px;
+  min-width: 114px;
+}
+
+nav .logo svg {
+  width: 40px;
+  color: white;
+}
+
+nav .logo h2 {
+  padding: 0 5px;
+}
+
+nav .nav-title {
+  padding-left: 120px;
+  min-width: 400px;
+  width: 800px;
+}
+
+nav .nav-title ul {
+  color: white;
+  font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .timetable {
+  width: 150px;
+  height: 40px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 50px;
+  margin-left: auto;
+}
+
+nav .timetable h3 {
+  font-size: 24px;
+}
+
+nav .fb {
+  height: 40px;
+  margin-left: 50px;
+}
+
+nav .fb img {
+  max-height: 100%;
+}
+
+nav .ig {
+  height: 40px;
+  margin-left: 50px;
+  margin-right: 20px;
+}
+
+nav .ig img {
+  max-height: 100%;
+}
+
+.banner {
+  position: relative;
+  background-image: url("../img/banner-3.jpg");
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.banner .timetable {
+  color: white;
+  background-color: black;
+  position: absolute;
+  right: 0px;
+  padding: 10px 60px;
+  bottom: 200px;
+}
+
+.banner .timetable .h3 {
+  font-size: 36px;
+}
+
+.aboutUs {
+  background-color: black;
+}
+
+.aboutUs .aboutUs-title h2 {
+  color: white;
+}
+
+.aboutUs .aboutUs-content .contentBrand {
+  position: relative;
+  width: 49%;
+}
+
+.aboutUs .aboutUs-content .contentBrand img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.aboutUs .aboutUs-content .contentBrand button {
+  position: absolute;
+  left: 5%;
+  top: 85%;
+  width: 90%;
+  opacity: 0.7;
+}
+
+.aboutUs .aboutUs-content .contentHistory {
+  position: relative;
+  width: 49%;
+}
+
+.aboutUs .aboutUs-content .contentHistory img {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.aboutUs .aboutUs-content .contentHistory button {
+  position: absolute;
+  left: 5%;
+  top: 85%;
+  width: 90%;
+  opacity: 0.7;
+}
+
+.classIntroduction .container .classIntroduction-title {
+  text-align: center;
+  font-size: 36px;
+}
+
+.classIntroduction .container .classcontainer .carousel .col-2 {
+  padding: 0;
+}
+
+.classIntroduction .container .classcontainer .carousel .carousel-inner .carousel-item img {
+  width: 100%;
+  height: 380px;
+  max-width: 100%;
+  max-height: 380px;
+  padding-bottom: 10px;
+}
+
+.classIntroduction .container .classcontainer .carousel .carousel-inner .carousel-item .col-9 {
+  padding: 0;
+}
+
+.classIntroduction .container .classcontainer .carousel .carousel-inner .carousel-item p {
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.curriculum {
+  background-image: url(../img/cur-background.jpg);
+}
+
+.curriculum .container .curriculum-card .curriculum-img img {
+  max-width: 100%;
+  min-height: 250px;
+}
+
+.curriculum .container .curriculum-card .curriculum-title {
+  background-color: gray;
+}
+
+.curriculum .curriculum-arrow-right {
+  left: 18%;
+}
+
+.curriculum .curriculum-arrow-left {
+  right: 18%;
+}
+
+.news {
+  background-color: black;
+  color: white;
+}
+
+.news .news-kinds .btn {
+  font-size: 1.75rem;
+}
+
+.news .news-content .news-date {
+  line-height: 50px;
+}
+
+.news .news-content .news-main {
+  line-height: 50px;
+}
+
+.charge {
+  color: white;
+  background-color: black;
+}
+
+.charge .charge-content {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+}
+
+.charge .charge-content .col-6 {
+  padding: 0 30px;
+}
+
+.charge .charge-content .col-6 .ch-more {
+  display: none;
+}
+
+.charge .charge-content .col-6 .postit {
+  position: absolute;
+  bottom: 10%;
+  left: 45%;
+  letter-spacing: 10px;
+}
+
+.charge .charge-content .charge-content-cost {
+  padding-left: 0;
+}
+
+.charge .charge-content .charge-content-cost .cost-bg {
+  background-image: url("../img/charge-cost.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.charge .charge-content .charge-content-member {
+  padding-right: 0;
+}
+
+.charge .charge-content .charge-content-member .cost-bg2 {
+  background-image: url("../img/charge-member.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.gymCoach {
+  background-color: black;
+  color: white;
+}
+
+.gymCoach .container .gymCoach-kinds .kind {
+  padding: 10px 20px;
+  border: 2px solid white;
+  margin: 0 10px;
+}
+
+.memberWitness .swiper-container .swiper-wrapper .swiper-slide-active {
+  width: 50%;
+}
+
+.memberWitness .swiper-container .swiper-wrapper .swiper-slide-prev {
+  width: 25%;
+}
+
+.memberWitness .swiper-container .swiper-wrapper .swiper-slide-next {
+  width: 25%;
+}
+
+.stronghold .container .stronghold-main .stronghold-main-map {
+  width: 38%;
+  height: 40vh;
+  background-color: cadetblue;
+  position: relative;
+}
+
+.stronghold .container .stronghold-main .stronghold-main-map .stronghold-main-btn {
+  border: 2px solid black;
+  position: absolute;
+  right: 10%;
+  bottom: 5%;
+}
+
+.stronghold .container .stronghold-main .stronghold-main-picture {
+  width: 61%;
+  height: 40vh;
+  background-color: crimson;
+}
+
+.footer-content {
+  background-color: black;
+}
+
+.footer-content .footer-logo {
+  width: 100px;
+}
+
+.footer-content .footer-logo .fb img {
+  height: 40px;
+}
+
+.footer-content .footer-logo .ig img {
+  height: 40px;
+}
+
+.footer-content .footer-copyright {
+  color: white;
+}
+/*# sourceMappingURL=index.css.map */
