@@ -9,6 +9,11 @@ h2 {
   margin: 0;
 }
 
+h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
 h3 {
   margin: 0;
 }
@@ -52,7 +57,7 @@ ol li {
 }
 
 nav {
-  height: 48px;
+  height: 70px;
   width: 100%;
   background-color: black;
   display: -webkit-box;
@@ -61,9 +66,10 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  padding-left: 120px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 nav .logo {
@@ -74,7 +80,6 @@ nav .logo {
       -ms-flex-align: center;
           align-items: center;
   color: white;
-  margin-left: 120px;
   min-width: 114px;
 }
 
@@ -88,22 +93,38 @@ nav .logo h2 {
 }
 
 nav .nav-title {
-  padding-left: 120px;
-  min-width: 400px;
-  width: 800px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 nav .nav-title ul {
   color: white;
-  font-size: 24px;
+  font-size: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+nav .nav-title ul li {
+  padding: 0 10px;
+}
+
+nav .nav-title ul li a {
+  color: white;
+}
+
+nav .nav-title ul li h1 {
+  font-size: 16px;
+}
+
+nav .nav-title ul li h2 {
+  font-size: 12px;
+}
+
 nav .timetable {
   width: 150px;
-  height: 40px;
+  height: 32px;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -114,8 +135,6 @@ nav .timetable {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 50px;
-  margin-left: auto;
 }
 
 nav .timetable h3 {
@@ -123,8 +142,7 @@ nav .timetable h3 {
 }
 
 nav .fb {
-  height: 40px;
-  margin-left: 50px;
+  height: 32px;
 }
 
 nav .fb img {
@@ -132,9 +150,8 @@ nav .fb img {
 }
 
 nav .ig {
-  height: 40px;
-  margin-left: 50px;
-  margin-right: 20px;
+  height: 32px;
+  padding-left: 20px;
 }
 
 nav .ig img {
@@ -153,7 +170,7 @@ nav .ig img {
 
 .banner .timetable {
   color: white;
-  background-color: black;
+  background-color: #3d313f;
   position: absolute;
   right: 0px;
   padding: 10px 60px;
@@ -165,7 +182,7 @@ nav .ig img {
 }
 
 .aboutUs {
-  background-color: black;
+  background-color: #3d313f;
 }
 
 .aboutUs .aboutUs-title h2 {
@@ -267,7 +284,7 @@ nav .ig img {
 }
 
 .news {
-  background-color: black;
+  background-color: #3d313f;
   color: white;
 }
 
@@ -285,7 +302,10 @@ nav .ig img {
 
 .charge {
   color: white;
-  background-color: black;
+}
+
+.charge .charge-title {
+  color: black;
 }
 
 .charge .charge-content {
@@ -336,7 +356,7 @@ nav .ig img {
 }
 
 .gymCoach {
-  background-color: black;
+  background-color: #3d313f;
   color: white;
 }
 
@@ -366,7 +386,7 @@ nav .ig img {
 }
 
 .stronghold .container .stronghold-main .stronghold-main-map .stronghold-main-btn {
-  border: 2px solid black;
+  border: 2px solid #3d313f;
   position: absolute;
   right: 10%;
   bottom: 5%;
@@ -379,7 +399,7 @@ nav .ig img {
 }
 
 .footer-content {
-  background-color: black;
+  background-color: #3d313f;
 }
 
 .footer-content .footer-logo {

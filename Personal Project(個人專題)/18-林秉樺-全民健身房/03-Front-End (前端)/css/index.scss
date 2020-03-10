@@ -4,17 +4,28 @@ body {
     box-sizing: border-box;
 }
 
+$main-color: #3d313f;
+$secondary-color:white;
+$nav-color:black;
+$nav-font-color:white;
 h2 {
     margin: 0;
-    
+
+}
+
+h1 {
+    font-size: 18px;
+    margin: 0;
 }
 
 h3 {
     margin: 0;
 }
-h4{
+
+h4 {
     margin: 0;
 }
+
 ul {
     margin: 0;
     list-style: none;
@@ -22,31 +33,34 @@ ul {
 }
 
 li {}
-ol{
+
+ol {
     margin: 0;
     padding: 0;
     list-style: none;
     font-size: 30px;
-    
-    li{
+
+    li {
         padding: 10px 30px;
         text-align: center;
         flex: 1;
         line-height: 60px;
     }
 }
+
 // 箭頭style 調高
-.svg-inline--fa{
+.svg-inline--fa {
     height: 50px;
-    
+
 }
+
 // 箭頭style 調寬
-.svg-inline--fa.fa-w-16{
+.svg-inline--fa.fa-w-16 {
     width: 50px;
 }
 
 // 公告箭頭style
-.svg-inline--fa.fa-w-6{
+.svg-inline--fa.fa-w-6 {
     width: 10px;
 }
 
@@ -80,19 +94,19 @@ ol{
 
 
 nav {
-    height: 48px;
+    height: 70px;
     width: 100%;
-    background-color: black;
+    background-color: $nav-color;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    
+    padding-left: 120px;
+    justify-content: space-between;
     .logo {
 
         display: flex;
         align-items: center;
         color: white;
-        margin-left: 120px;
+
         min-width: 114px;
 
         svg {
@@ -106,26 +120,34 @@ nav {
     }
 
     .nav-title {
-        padding-left: 120px;
-        min-width: 400px;
-        width: 800px;
-
+        flex-grow: 1;
         ul {
             color: white;
-            font-size: 24px;
+            font-size: 18px;
             display: flex;
+            li{
+                padding: 0 10px;
+                a{
+                    color:$nav-font-color;
+                }
+                h1{
+                    font-size:16px
+                }
+                h2{
+                    font-size: 12px;
+                }
+            }
         }
     }
 
     .timetable {
         width: 150px;
-        height: 40px;
+        height: 32px;
         background-color: white;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: 50px;
-        margin-left: auto;
+
 
         h3 {
             font-size: 24px;
@@ -134,8 +156,8 @@ nav {
     }
 
     .fb {
-        height: 40px;
-        margin-left: 50px;
+        height: 32px;
+        
 
         img {
             max-height: 100%;
@@ -143,9 +165,8 @@ nav {
     }
 
     .ig {
-        height: 40px;
-        margin-left: 50px;
-        margin-right: 20px;
+        height: 32px;
+        padding-left: 20px;;
 
         img {
             max-height: 100%;
@@ -166,7 +187,7 @@ nav {
 
     .timetable {
         color: white;
-        background-color: black;
+        background-color: $main-color;
         position: absolute;
         right: 0px;
         padding: 10px 60px;
@@ -179,24 +200,27 @@ nav {
 }
 
 .aboutUs {
-    background-color: black;
+    background-color: $main-color;
+
     .aboutUs-title {
-        h2{
-            color:white;
+        h2 {
+            color: white;
         }
     }
 
     .aboutUs-content {
-        
-        .contentBrand{
+
+        .contentBrand {
             position: relative;
             width: 49%;
-            img{
-                
+
+            img {
+
                 max-width: 100%;
                 max-height: 100%;
             }
-            button{
+
+            button {
                 position: absolute;
                 left: 5%;
                 top: 85%;
@@ -204,16 +228,18 @@ nav {
                 opacity: 0.7;
             }
         }
-        
-        .contentHistory{
+
+        .contentHistory {
             position: relative;
             width: 49%;
-            img{
+
+            img {
                 position: relative;
                 max-width: 100%;
                 max-height: 100%;
             }
-            button{
+
+            button {
                 position: absolute;
                 left: 5%;
                 top: 85%;
@@ -225,42 +251,45 @@ nav {
 }
 
 
-.classIntroduction{
-    .container{
-        
-        .classIntroduction-title{
+.classIntroduction {
+    .container {
+
+        .classIntroduction-title {
             text-align: center;
             font-size: 36px;
         }
-        .classcontainer{
-            .carousel{
 
-                .col-2{
+        .classcontainer {
+            .carousel {
+
+                .col-2 {
                     padding: 0;
                 }
-                .col-10{
-                    
-                }
-                .class-btn{
-                    
-                }
-                .carousel-inner{
-                    .carousel-item{
-                        img{
+
+                .col-10 {}
+
+                .class-btn {}
+
+                .carousel-inner {
+                    .carousel-item {
+                        img {
                             width: 100%;
                             height: 380px;
                             max-width: 100%;
                             max-height: 380px;
                             padding-bottom: 10px;
                         }
-                        .col-9{
+
+                        .col-9 {
                             padding: 0;
                         }
-                        p{
+
+                        p {
                             font-size: 18px;
                             letter-spacing: 2px;
                         }
-                        .carousel-control-prev{
+
+                        .carousel-control-prev {
                             width: auto;
                         }
                     }
@@ -269,76 +298,92 @@ nav {
         }
     }
 }
-.curriculum{
+
+.curriculum {
     background-image: url(../img/cur-background.jpg);
-    .container{
+
+    .container {
         position: relative;
-        .curriculum-card{
-            .curriculum-img{
-                img{
+
+        .curriculum-card {
+            .curriculum-img {
+                img {
                     max-width: 100%;
                     min-height: 250px;
                 }
-                
+
             }
-            .curriculum-title{
+
+            .curriculum-title {
                 background-color: gray;
             }
         }
     }
-    .curriculum-arrow-right{
+
+    .curriculum-arrow-right {
         width: auto;
         left: -4%;
     }
-    .curriculum-arrow-left{
-        width:auto;
+
+    .curriculum-arrow-left {
+        width: auto;
         right: -4%;
     }
 }
-.news{
-    background-color: black;
+
+.news {
+    background-color: $main-color;
     color: white;
-    .news-kinds{
-        .btn{
+
+    .news-kinds {
+        .btn {
             font-size: 1.75rem;
         }
     }
-    .news-content{
-        .news-date{
+
+    .news-content {
+        .news-date {
             line-height: 50px;
         }
-        .news-main{
+
+        .news-main {
             line-height: 50px;
         }
     }
 }
 
-.charge{
+.charge {
     color: white;
-    background-color: black;
-    .charge-title{
+    
 
+    .charge-title {
+        color: black;
     }
-    .charge-content{
+
+    .charge-content {
         width: 100%;
         height: 50vh;
         position: relative;
-        .col-6{
+
+        .col-6 {
             padding: 0 30px;
-            
-            .ch-more{
+
+            .ch-more {
                 display: none;
             }
-            .postit{
+
+            .postit {
                 position: absolute;
                 bottom: 10%;
                 left: 45%;
                 letter-spacing: 10px;
             }
         }
-        .charge-content-cost{
+
+        .charge-content-cost {
             padding-left: 0;
-            .cost-bg{
+
+            .cost-bg {
                 background-image: url('../img/charge-cost.jpg');
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -347,9 +392,11 @@ nav {
                 height: 100%;
             }
         }
-        .charge-content-member{
+
+        .charge-content-member {
             padding-right: 0;
-            .cost-bg2{
+
+            .cost-bg2 {
                 background-image: url('../img/charge-member.jpg');
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -358,16 +405,18 @@ nav {
                 height: 100%;
             }
         }
-        
-        
+
+
     }
 }
-.gymCoach{
-    background-color: black;
-    color:white;
-    .container{
-        .gymCoach-kinds{
-            .kind{
+
+.gymCoach {
+    background-color: $main-color;
+    color: white;
+
+    .container {
+        .gymCoach-kinds {
+            .kind {
                 padding: 10px 20px;
                 border: 2px solid white;
                 margin: 0 10px;
@@ -377,15 +426,17 @@ nav {
 }
 
 .memberWitness {
-    .swiper-container{
-        .swiper-wrapper{
-            .swiper-slide-active{
+    .swiper-container {
+        .swiper-wrapper {
+            .swiper-slide-active {
                 width: 50%;
             }
-            .swiper-slide-prev{
+
+            .swiper-slide-prev {
                 width: 25%;
             }
-            .swiper-slide-next{
+
+            .swiper-slide-next {
                 width: 25%;
             }
         }
@@ -393,23 +444,25 @@ nav {
 }
 
 
-.stronghold{
-    .container{
-        .stronghold-main{
-            .stronghold-main-map{
+.stronghold {
+    .container {
+        .stronghold-main {
+            .stronghold-main-map {
                 width: 38%;
                 height: 40vh;
                 background-color: cadetblue;
                 position: relative;
-                .stronghold-main-btn{
-                    border: 2px solid black;
-                    
+
+                .stronghold-main-btn {
+                    border: 2px solid $main-color;
+
                     position: absolute;
                     right: 10%;
                     bottom: 5%;
                 }
             }
-            .stronghold-main-picture{
+
+            .stronghold-main-picture {
                 width: 61%;
                 height: 40vh;
                 background-color: crimson;
@@ -420,22 +473,26 @@ nav {
 
 
 
-.footer-content{
-    background-color: black;
-    .footer-logo{
+.footer-content {
+    background-color: $main-color;
+
+    .footer-logo {
         width: 100px;
-        .fb{
-            img{
+
+        .fb {
+            img {
                 height: 40px;
             }
         }
-        .ig{
-            img{
+
+        .ig {
+            img {
                 height: 40px;
             }
         }
     }
-    .footer-copyright{
+
+    .footer-copyright {
         color: white;
     }
 }
