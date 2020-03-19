@@ -13,6 +13,7 @@ h2 {
 
 }
 
+
 h1 {
     font-size: 18px;
     margin: 0;
@@ -47,7 +48,11 @@ ol {
         line-height: 60px;
     }
 }
-
+a{
+    &:hover{
+        text-decoration: none;
+    }
+}
 // 箭頭style 調高
 .svg-inline--fa {
     height: 50px;
@@ -129,6 +134,9 @@ nav {
                 padding: 0 10px;
                 a{
                     color:$nav-font-color;
+                    &:hover{
+                        text-decoration: none;
+                    }
                 }
                 h1{
                     font-size:16px
@@ -177,7 +185,7 @@ nav {
 
 .banner {
     position: relative;
-    background-image: url('../img/banner-3.jpg');
+    background-image: url('../img/banner-4.jpg');
     height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
@@ -264,6 +272,11 @@ nav {
 
                 .col-2 {
                     padding: 0;
+                    .btn{
+                        font-size: 24px;
+                        line-height: 60px;
+                        ;
+                    }
                 }
 
                 .col-10 {}
@@ -426,6 +439,9 @@ nav {
 }
 
 .memberWitness {
+    background-image: url("../img/training-828732_1920.jpg");
+    background-size: cover;
+    background-position: top;
     .swiper-container {
         .swiper-wrapper {
             .swiper-slide-active {
@@ -443,8 +459,33 @@ nav {
     }
 }
 
+.fitnessProducts{
+    .container{
+        .fitnessProducts-content{
+            
+            position: relative;
+            padding-top: 30px;
+            .mask{
+                height: 40px;
+                width: 100%;
+                background-color: rgba($color: black, $alpha: 0.2);
+                .card-title{                    
+                    font-size: 18px;
+                    color:black;
+                    margin: 0;
+                }
+                .card-more{
+                    font-size: 18px;
+                    display: none;
+                }
+            }
+            
+        }
+    }
+}
 
 .stronghold {
+    padding: 30px 0;
     .container {
         .stronghold-main {
             .stronghold-main-map {
@@ -465,7 +506,9 @@ nav {
             .stronghold-main-picture {
                 width: 61%;
                 height: 40vh;
-                background-color: crimson;
+                background-image: url("../img/15205059851.博愛廠.jpg");
+                background-position: center;
+                background-size: cover;
             }
         }
     }

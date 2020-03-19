@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   font-family: 'Noto Sans TC';
@@ -42,6 +43,10 @@ ol li {
       -ms-flex: 1;
           flex: 1;
   line-height: 60px;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .svg-inline--fa {
@@ -114,6 +119,10 @@ nav .nav-title ul li a {
   color: white;
 }
 
+nav .nav-title ul li a:hover {
+  text-decoration: none;
+}
+
 nav .nav-title ul li h1 {
   font-size: 16px;
 }
@@ -160,7 +169,7 @@ nav .ig img {
 
 .banner {
   position: relative;
-  background-image: url("../img/banner-3.jpg");
+  background-image: url("../img/banner-4.jpg");
   height: 100vh;
   width: 100%;
   background-repeat: no-repeat;
@@ -233,6 +242,11 @@ nav .ig img {
 
 .classIntroduction .container .classcontainer .carousel .col-2 {
   padding: 0;
+}
+
+.classIntroduction .container .classcontainer .carousel .col-2 .btn {
+  font-size: 24px;
+  line-height: 60px;
 }
 
 .classIntroduction .container .classcontainer .carousel .carousel-inner .carousel-item img {
@@ -366,6 +380,12 @@ nav .ig img {
   margin: 0 10px;
 }
 
+.memberWitness {
+  background-image: url("../img/training-828732_1920.jpg");
+  background-size: cover;
+  background-position: top;
+}
+
 .memberWitness .swiper-container .swiper-wrapper .swiper-slide-active {
   width: 50%;
 }
@@ -376,6 +396,32 @@ nav .ig img {
 
 .memberWitness .swiper-container .swiper-wrapper .swiper-slide-next {
   width: 25%;
+}
+
+.fitnessProducts .container .fitnessProducts-content {
+  position: relative;
+  padding-top: 30px;
+}
+
+.fitnessProducts .container .fitnessProducts-content .mask {
+  height: 40px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.fitnessProducts .container .fitnessProducts-content .mask .card-title {
+  font-size: 18px;
+  color: black;
+  margin: 0;
+}
+
+.fitnessProducts .container .fitnessProducts-content .mask .card-more {
+  font-size: 18px;
+  display: none;
+}
+
+.stronghold {
+  padding: 30px 0;
 }
 
 .stronghold .container .stronghold-main .stronghold-main-map {
@@ -395,7 +441,9 @@ nav .ig img {
 .stronghold .container .stronghold-main .stronghold-main-picture {
   width: 61%;
   height: 40vh;
-  background-color: crimson;
+  background-image: url("../img/15205059851.博愛廠.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .footer-content {
