@@ -146,6 +146,11 @@ nav .timetable {
           align-items: center;
 }
 
+nav .timetable a {
+  color: black;
+  text-decoration: none;
+}
+
 nav .timetable h3 {
   font-size: 24px;
 }
@@ -200,7 +205,6 @@ nav .ig img {
 
 .aboutUs .aboutUs-content .contentBrand {
   position: relative;
-  width: 49%;
 }
 
 .aboutUs .aboutUs-content .contentBrand img {
@@ -218,7 +222,6 @@ nav .ig img {
 
 .aboutUs .aboutUs-content .contentHistory {
   position: relative;
-  width: 49%;
 }
 
 .aboutUs .aboutUs-content .contentHistory img {

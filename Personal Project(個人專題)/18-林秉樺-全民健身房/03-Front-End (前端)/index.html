@@ -61,19 +61,19 @@
         <div class="nav-title text-left mt-2">
           <ul>
             <li>
-              <a href="">
+              <a href="#about">
                 <h1>關於</h1>
                 <h2>ABOUT</h2>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="#curriculum">
                 <h1>課程</h1>
                 <h2>CLASS</h2>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="#news">
                 <h1>公告</h1>
                 <h2>NEWS</h2>
               </a>
@@ -85,19 +85,19 @@
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="#gymCoach">
                 <h1>教練</h1>
                 <h2>COACH</h2>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="#fitnessProducts">
                 <h1>產品</h1>
                 <h2>PRODUCT</h2>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="#stronghold">
                 <h1>地點</h1>
                 <h2>LOCATION</h2>
               </a>
@@ -105,7 +105,7 @@
           </ul>
         </div>
         <div class="timetable mt-2">
-          <h3>課表查詢</h3>
+          <a href="#curriculum"><h3>課表查詢</h3></a>
         </div>
         <div class="d-flex justify-content-end mt-2" style="padding-left:40px">
           <div class="fb">
@@ -122,18 +122,18 @@
         <h3>課表查詢</h3>
       </div>
     </main>
-    <main class="aboutUs pt-5">
+    <main class="aboutUs pt-5" id="about">
       <div class="aboutUs-title text-center">
         <h2>關於我們</h2>
       </div>
-      <div class="aboutUs-content pt-4 pb-5 d-flex justify-content-between">
-        <div class="contentBrand">
+      <div class="aboutUs-content pt-4 pb-5 d-flex justify-content-center">
+        <div class="contentBrand col-xl-5">
           <img src="./img/brand.jpg" alt="" />
           <button type="button" class="btn btn-secondary btn-lg btn-block">
             品牌述求
           </button>
         </div>
-        <div class="contentHistory">
+        <div class="contentHistory col-xl-5">
           <img src="./img/History.jpg" alt="" />
           <button type="button" class="btn btn-secondary btn-lg btn-block">
             歷史由來
@@ -141,7 +141,7 @@
         </div>
       </div>
     </main>
-    <main class="classIntroduction">
+    <main class="classIntroduction" id="classIntroduction">
       <div class="container">
         <div class="classIntroduction-title pt-5">課程介紹</div>
         <div class="classcontainer d-flex pt-4 pb-4">
@@ -225,7 +225,7 @@
         </div>
       </div>
     </main>
-    <main class="curriculum pb-5">
+    <main class="curriculum pb-5" id="curriculum">
       <div class="title text-center pt-5 h2">各館課表</div>
       <!-- <div class="container d-flex pt-3">
             <div class="curriculum-card col-3">
@@ -367,7 +367,7 @@
       </div>
     </main>
 
-    <main class="news text-center">
+    <main class="news text-center" id="news">
       <div class="news-title pt-5 h2">
         公告
       </div>
@@ -427,7 +427,7 @@
         </div>
       </div>
     </main>
-    <main class="gymCoach text-center">
+    <main class="gymCoach text-center" id="gymCoach">
       <div class="container">
         <div class="gymCoach-title h2 pt-5">健身教練</div>
         <div class="gymCoach-kinds d-flex justify-content-center h3 pt-3">
@@ -627,7 +627,7 @@
         <div class="swiper-button-prev"></div>
       </div>
     </main>
-    <main class="fitnessProducts text-center">
+    <main class="fitnessProducts text-center" id="fitnessProducts">
       <div class="container">
         <div class="fitnessProducts-title h2 pt-5">健身產品</div>
         <div class="fitnessProducts-content d-flex">
@@ -672,7 +672,7 @@
         </div>
       </div>
     </main>
-    <main class="stronghold text-center">
+    <main class="stronghold text-center" id="stronghold">
       <div class="container ">
         <div class="stronghold-title h2">全台據點</div>
         <div class="stronghold-choose d-flex justify-content-center">
@@ -730,7 +730,9 @@
         </div>
       </div>
     </main>
-
+    <!-- <main>
+      <div class="gotoTOP">TOP</div>
+    </main> -->
     <footer>
       <div class="footer-content d-flex flex-column align-items-center">
         <div class="footer-logo d-flex justify-content-between py-3">
@@ -746,6 +748,7 @@
         </div>
       </div>
     </footer>
+
   </body>
   <script
     src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
